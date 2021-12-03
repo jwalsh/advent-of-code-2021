@@ -4,3 +4,10 @@
 
 - https://2021-aoc-templates.util.repl.co/
 - https://github.com/Bogdanp/awesome-advent-of-code
+
+** Day 1: Sonar Sweep
+
+Other related implementations use the same approach for the partitioning and sliding window approaches.
+
+- Kotlin https://www.youtube.com/watch?v=4A2WwniJdNc
+- Ruby zip
