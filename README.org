@@ -16,12 +16,12 @@ Other related implementations use partitioning and sliding window approaches.
 Reasonable windowing implementation with count and a predicate rule.
 
 #+begin_src kotlin
-input.windowed(size: 2).count { (a, b) -> a < b}
+input.windowed(size: 2).count { (a, b) -> a < b }
 #+end_src
 
 - Ruby zip
 
-** Day 2: Dive
+** Day 2: Dive!
 
 Most implementations just looked at a basic case lookup but looked at a position update rather than the conditional blocks.
 
@@ -41,3 +41,49 @@ const mover = {
   },
 };
 #+end_src
+
+** Day 3: Binary Diagnostic
+
+** Day 4
+
+** Day 5
+
+** Day 6
+
+** Day 7
+
+** Day 8
+
+** Day 9
+
+** Day 10
+
+** Day 11
+
+** Day 12
+
+** Day 13
+
+** Day 14
+
+** Day 15
+
+** Day 16
+
+** Day 17
+
+** Day 18
+
+** Day 19
+
+** Day 20
+
+** Day 21
+
+** Day 22
+
+** Day 23
+
+** Day 24
+
+** Day 25
