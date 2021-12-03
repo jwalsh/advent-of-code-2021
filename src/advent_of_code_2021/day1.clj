@@ -5,14 +5,14 @@
 
 ;; day 1
 ;; silver
-(quote
- (->> (u/read-input "1")
-      (map #(Integer/parseInt %))
-      (partition 2 1)
-      ;; u/debug
-      (filter #(< (first %) (second %)))
-      count)
- )
+;; (quote)
+(->> (u/read-input "1")
+     (map #(Integer/parseInt %))
+     (partition 2 1)
+     ;; u/debug
+     (filter #(< (first %) (second %)))
+     count)
+
 
 ;; gold
 (quote
