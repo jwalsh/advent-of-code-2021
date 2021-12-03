@@ -7,8 +7,6 @@
   [& args]
   (println "Advent of Code 2021"))
 
-
-
 (defn- read-input [day]
   (->>  ".in"
         (str day)
@@ -19,19 +17,42 @@
 
 ;; day 1
 ;; silver
-(->> (read-input "1")
-     (map #(Integer/parseInt %))
-     (partition 2 1)
-     (filter #(< (first %) (second %)))
-     count)
+(quote
+ (->> (read-input "1")
+      (map #(Integer/parseInt %))
+      (partition 2 1)
+      ;; (take 10)
+      ;; println
+      (filter #(< (first %) (second %)))
+      count)
+ )
 
 ;; gold
-(->> (read-input "1")
-     (map #(Integer/parseInt %))
-     (partition 3 1)
-     (map #(reduce + %))
-     (partition 2 1)
-     (filter #(< (first %) (second %)))
-     count)
+(quote
+ (->> (read-input "1")
+      (map #(Integer/parseInt %))
+      (partition 3 1)
+      (map #(reduce + %))
+      (partition 2 1)
+      (filter #(< (first %) (second %)))
+      count)
+ )
 
 ;; day 2
+(defn day2 []
+  "Dive!"
+  (->> (read-input "2")
+       println))
+
+(quote
+ (day2)
+ )
+
+;; ((:down {:down (fn [n] n)}) 5)
+(defn day3 []
+  (->> (read-input "3")
+       println))
+
+(quote
+ (day3)
+ )
