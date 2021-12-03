@@ -21,8 +21,6 @@
 ;; silver
 (->> (read-input "1")
      (map #(Integer/parseInt %))
-     (partition 3 1)
-     (map #(reduce + %))
      (partition 2 1)
      (filter #(< (first %) (second %)))
      count)
