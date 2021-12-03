@@ -1,15 +1,6 @@
 * Advent of Code 2021
 
-- https://2021-aoc-templates.util.repl.co/
 - https://adventofcode.com/2021
+
+- https://2021-aoc-templates.util.repl.co/
 - https://github.com/Bogdanp/awesome-advent-of-code
-
-** Inputs
-
-#+begin_src clojure
-  (defn- read-input [day]
-    (->> day
-         (str "inputs/day")
-         slurp
-         str/split-lines))
-#+end_src
