@@ -8,21 +8,24 @@
   (println "Advent of Code 2021"))
 
 (defn- read-input [day]
+  "Get line by line inputs without secondary processing."
   (->>  ".in"
         (str day)
         (str "inputs/day")
         slurp
-        str/split-lines
-        ))
+        str/split-lines))
 
+(defn- debug [seq]
+  (->> seq
+       (take 10)
+       println))
 ;; day 1
 ;; silver
 (quote
  (->> (read-input "1")
       (map #(Integer/parseInt %))
       (partition 2 1)
-      ;; (take 10)
-      ;; println
+      ;; debug
       (filter #(< (first %) (second %)))
       count)
  )
@@ -35,6 +38,7 @@
       (map #(reduce + %))
       (partition 2 1)
       (filter #(< (first %) (second %)))
+      ;; debug
       count)
  )
 
