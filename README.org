@@ -7,7 +7,44 @@
 
 ** Day 1: Sonar Sweep
 
-Other related implementations use the same approach for the partitioning and sliding window approaches.
+Base implementation is an iteration holding on to the current depth with an optional previous depth.
+
+Other related implementations use partitioning and sliding window approaches.
 
 - Kotlin https://www.youtube.com/watch?v=4A2WwniJdNc
+
+Reasonable windowing implementation with count and a predicate rule.
+
+#+begin_src kotlin
+input.windowed(size: 2).count { (a, b) -> a < b}
+#+end_src
+
 - Ruby zip
+
+** Day 2: Dive
+
+Most implementations just looked at a basic case lookup but looked at a position update rather than the conditional blocks.
+
+#+begin_src typescript
+const mover = {
+  'forward': (inc) => {
+    return (p) => {
+      p['x'] = p['x'] + inc;
+      return p
+    };
+  },
+  'up': (inc) => {
+    return (p) => {
+      p['y'] = p['y'] - inc;
+      return p
+    };
+
+  },
+  'down': (inc) => {
+    return (p) => {
+      p['y'] = p['y'] + inc;
+      return p
+    };
+  },
+}
+#+end_src
