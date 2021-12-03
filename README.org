@@ -27,24 +27,17 @@ Most implementations just looked at a basic case lookup but looked at a position
 
 #+begin_src typescript
 const mover = {
-  'forward': (inc) => {
-    return (p) => {
-      p['x'] = p['x'] + inc;
-      return p
-    };
+  forward: (inc) => (p) => {
+    p.x += inc;
+    return p;
   },
-  'up': (inc) => {
-    return (p) => {
-      p['y'] = p['y'] - inc;
-      return p
-    };
-
+  up: (inc) => (p) => {
+    p.y -= inc;
+    return p;
   },
-  'down': (inc) => {
-    return (p) => {
-      p['y'] = p['y'] + inc;
-      return p
-    };
+  down: (inc) => (p) => {
+    p.y += inc;
+    return p;
   },
-}
+};
 #+end_src
