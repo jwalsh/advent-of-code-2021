@@ -1,13 +1,14 @@
 * Advent of Code 2021
 
 - https://adventofcode.com/2021
-
 - https://2021-aoc-templates.util.repl.co/
 - https://github.com/Bogdanp/awesome-advent-of-code
 
+The notes below cover non-Clojure implementations of solutions.
+
 ** Day 1: [[https://adventofcode.com/2021/day/1][Sonar Sweep]]
 
-Base implementation is an iteration holding on to the current depth with an optional previous depth.
+The base implementation is an iteration holding on to the current depth with an optional previous depth.
 
 Other related implementations use partitioning and sliding window approaches.
 
@@ -29,23 +30,28 @@ input.windowed(size: 2).count { (a, b) -> a < b }
 
 Most implementations just looked at a basic case lookup but looked at a position update rather than the conditional blocks.
 
-Alternatively look at ~mover[dir](increment)(position)~:
+Alternatively look at ~move[dir](increment)(position)~:
 
 #+begin_src typescript
-const mover = {
-  forward: (inc) => (p) => {
-    p.x += inc;
-    return p;
-  },
-  up: (inc) => (p) => {
-    p.y -= inc;
-    return p;
-  },
-  down: (inc) => (p) => {
-    p.y += inc;
-    return p;
-  },
-};
+  type Point = {
+      x: number;
+      y: number;
+  };
+
+  const move = {
+      forward: (inc: number) => (p: Point) => {
+          p.x += inc;
+          return p;
+      },
+      up: (inc) => (p) => {
+          p.y -= inc;
+          return p;
+      },
+      down: (inc) => (p) => {
+          p.y += inc;
+          return p;
+      },
+  };
 #+end_src
 
 ** Day 3: [[https://adventofcode.com/2021/day/3][Binary Diagnostic]]
