@@ -1,3 +1,7 @@
+init:
+	asdf install
+	asdf local clojure 1.10.3
+
 core:
 	clojure -m advent-of-code-2021.core
 
