@@ -5,7 +5,7 @@
 - https://2021-aoc-templates.util.repl.co/
 - https://github.com/Bogdanp/awesome-advent-of-code
 
-** Day 1: Sonar Sweep
+** Day 1: [[https://adventofcode.com/2021/day/1][Sonar Sweep]]
 
 Base implementation is an iteration holding on to the current depth with an optional previous depth.
 
@@ -21,7 +21,7 @@ input.windowed(size: 2).count { (a, b) -> a < b }
 
 - Ruby zip
 
-** Day 2: Dive!
+** Day 2: [[https://adventofcode.com/2021/day/2][Dive!]]
 
 - Python https://www.youtube.com/watch?v=e_PWnVXa_II&list=PLDeBWauprDRjbplIuyhVhXhIt7k4NuOad&index=2
 
@@ -48,7 +48,7 @@ const mover = {
 };
 #+end_src
 
-** Day 3: Binary Diagnostic
+** Day 3: [[https://adventofcode.com/2021/day/3][Binary Diagnostic]]
 
 ** Day 4
 
