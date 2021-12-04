@@ -26,6 +26,8 @@ input.windowed(size: 2).count { (a, b) -> a < b }
 
 - Python https://www.youtube.com/watch?v=e_PWnVXa_II&list=PLDeBWauprDRjbplIuyhVhXhIt7k4NuOad&index=2
 
+[[https://www.python.org/dev/peps/pep-0636/][Structural Pattern Matching]] used in a number of implementations.
+
 - TypeScript
 
 Most implementations just looked at a basic case lookup but looked at a position update rather than the conditional blocks.

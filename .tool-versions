@@ -2,7 +2,9 @@ clojure 1.10.3
 elixir 1.13.0
 elm 0.19.1
 go 1.17
+# haskell 8.6.5
 nodejs 16.13.1
 python 3.10.0
 ruby 3.0.3
 rust 1.57.0
+# typescript 4.4
