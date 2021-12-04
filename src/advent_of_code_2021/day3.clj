@@ -2,7 +2,6 @@
   (:require [clojure.string :as str]
             [advent-of-code-2021.utils :as u]))
 
-
 ;; ((:down {:down (fn [n] n)}) 5)
 (defn day3 []
   (->> (u/read-input "3")
@@ -23,16 +22,19 @@
 01010"
        str/split-lines))
 
-;; (read-input "3")
-(->> (u/read-input "3") ;; day-3
-     (map #(map-indexed (fn [idx itm] [(str idx) itm]) %))
-     (mapcat identity)
-     frequencies
-     (sort-by first)
-     (partition 2)
-     )
+(quote
+ (->> (u/read-input "3") ;; day-3
+      (map #(map-indexed (fn [idx itm] [(str idx) itm]) %))
+      (mapcat identity)
+      frequencies
+      (sort-by first)
+      (partition 2)
+      )
+ )
 
-(* (Integer/parseInt "101000010000" 2) (Integer/parseInt "010111101111" 2))
+(quote
+ (* (Integer/parseInt "101000010000" 2) (Integer/parseInt "010111101111" 2))
+ )
 
 (quote
  (day3)

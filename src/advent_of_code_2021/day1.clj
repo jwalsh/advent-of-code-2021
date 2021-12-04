@@ -2,8 +2,6 @@
   (:require [clojure.string :as str]
             [advent-of-code-2021.utils :as u]))
 
-
-;; day 1
 ;; silver
 ;; (quote)
 (->> (u/read-input "1")
@@ -12,7 +10,6 @@
      ;; u/debug
      (filter #(< (first %) (second %)))
      count)
-
 
 ;; gold
 (quote

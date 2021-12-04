@@ -32,7 +32,7 @@ input.windowed(size: 2).count { (a, b) -> a < b }
 
 Most implementations just looked at a basic case lookup but looked at a position update rather than the conditional blocks.
 
-Alternatively look at ~move[dir](increment)(position)~:
+Alternatively look at ~move[direction](increment)(position)~:
 
 #+begin_src typescript
   type Point = {
@@ -45,11 +45,11 @@ Alternatively look at ~move[dir](increment)(position)~:
           p.x += inc;
           return p;
       },
-      up: (inc) => (p) => {
+      up: (inc: number) => (p: Point) => {
           p.y -= inc;
           return p;
       },
-      down: (inc) => (p) => {
+      down: (inc: number) => (p: Point) => {
           p.y += inc;
           return p;
       },
@@ -58,7 +58,7 @@ Alternatively look at ~move[dir](increment)(position)~:
 
 ** Day 3: [[https://adventofcode.com/2021/day/3][Binary Diagnostic]]
 
-** Day 4
+** Day 4: [[https://adventofcode.com/2021/day/4][Giant Squid]]
 
 ** Day 5
 

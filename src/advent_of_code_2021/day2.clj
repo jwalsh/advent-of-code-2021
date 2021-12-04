@@ -2,10 +2,6 @@
   (:require [clojure.string :as str]
             [advent-of-code-2021.utils :as u]))
 
-
-
-
-;; day 2
 (defn day2 []
   "Dive!"
   (->> (u/read-input "2")
